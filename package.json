@@ -11,19 +11,20 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"pinia": "^2.1.4",
 		"vue": "^3.3.4",
-		"vue-router": "^4.2.2"
+		"vue-router": "^4.2.4"
 	},
 	"devDependencies": {
 		"@iconify/utils": "^2.1.7",
 		"@mioe/eslint-config": "^0.1.4",
-		"@types/node": "^20.3.3",
+		"@types/node": "^20.4.1",
 		"@vitejs/plugin-vue": "^4.2.3",
 		"eslint": "^8.44.0",
 		"typescript": "^5.1.6",
-		"unocss": "^0.53.4",
-		"vite": "^4.3.9",
+		"unocss": "^0.53.5",
+		"vite": "^4.4.2",
 		"vite-plugin-pages": "^0.31.0",
-		"vue-tsc": "^1.8.3"
+		"vue-tsc": "^1.8.4"
 	}
 }

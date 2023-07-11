@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
 
 /**
  * Styles
@@ -9,8 +8,15 @@ import 'uno.css'
 import './style.css'
 
 /**
+ * Modules
+ */
+import { pinia } from './modules/pinia'
+import { router } from './modules/vue-router'
+
+/**
  * init app
  */
 createApp(App)
 	.use(router)
+	.use(pinia)
 	.mount('#app')
