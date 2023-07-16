@@ -10,7 +10,7 @@ import './style.css'
 /**
  * Modules
  */
-import { i18n, loadLanguageAsync } from './modules/vue-i18n'
+import { i18n, loadLanguageAsync, getDefaultLocale } from './modules/vue-i18n'
 import { pinia } from './modules/pinia'
 import { router } from './modules/vue-router'
 
@@ -26,4 +26,5 @@ createApp(App)
 /**
  * do something after init app
  */
-await loadLanguageAsync('en')
+const defaultLocale = getDefaultLocale()
+await loadLanguageAsync(defaultLocale)
