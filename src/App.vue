@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { useAppStore } from '~/stores/app'
 import { availableLocales, loadLanguageAsync } from '~/modules/vue-i18n'
-
+import { setStorageKey } from '~/helpers'
 
 const router = useRouter()
 const routes = router.options.routes
-
 const { t, locale } = useI18n()
 
 const appStore = useAppStore()
@@ -15,6 +12,8 @@ const {
 	increment,
 	decrement,
 } = appStore
+
+const storageValue = useStorage(setStorageKey('storageValue'), '')
 
 async function toggleLocales() {
 	const locales = availableLocales
@@ -41,6 +40,14 @@ async function toggleLocales() {
 		<button @click="toggleLocales">
 			toggleLocales: {{ locale }}
 		</button>
+	</div>
+
+	<div class="p-[8px]">
+		<p>@vueuse test</p>
+		<input
+			v-model="storageValue"
+			type="text"
+		>
 	</div>
 
 	<div class="p-[8px]">
