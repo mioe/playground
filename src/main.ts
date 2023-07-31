@@ -27,4 +27,4 @@ createApp(App)
  * do something after init app
  */
 const defaultLocale = getDefaultLocale()
-await loadLanguageAsync(defaultLocale)
+loadLanguageAsync(defaultLocale)
