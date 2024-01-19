@@ -59,6 +59,7 @@ export default defineConfig(({ command, mode }) => {
 			// https://github.com/antfu/vite-plugin-pwa
 			VitePWA({
 				registerType: 'autoUpdate',
+				injectRegister: 'auto',
 				includeAssets: ['favicons/favicon.svg', 'favicons/safari-pinned-tab.svg'],
 				manifest: {
 					name: 'Playground',
