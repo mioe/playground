@@ -5,6 +5,7 @@ import Unocss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 
 import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
@@ -53,6 +54,35 @@ export default defineConfig(({ command, mode }) => {
 					'src/stores',
 				],
 				vueTemplate: true,
+			}),
+
+			// https://github.com/antfu/vite-plugin-pwa
+			VitePWA({
+				registerType: 'autoUpdate',
+				includeAssets: ['favicons/favicon.svg', 'favicons/safari-pinned-tab.svg'],
+				manifest: {
+					name: 'Playground',
+					short_name: 'Playground',
+					theme_color: '#ffffff',
+					icons: [
+						{
+							src: '/favicons/pwa-192x192.png',
+							sizes: '192x192',
+							type: 'image/png',
+						},
+						{
+							src: '/favicons/pwa-512x512.png',
+							sizes: '512x512',
+							type: 'image/png',
+						},
+						{
+							src: '/favicons/pwa-512x512.png',
+							sizes: '512x512',
+							type: 'image/png',
+							purpose: 'any maskable',
+						},
+					],
+				},
 			}),
 		],
 

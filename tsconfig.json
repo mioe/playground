@@ -7,6 +7,9 @@
 		"strict": true,
 		"jsx": "preserve",
 		"resolveJsonModule": true,
+		"types": [
+			"vitest",
+		],
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"lib": ["ESNext", "DOM"],
