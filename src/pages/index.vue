@@ -8,6 +8,6 @@ import HelloWorld from '~/components/HelloWorld.vue'
 		world="world"
 	/>
 	<button>Hello, World!</button>
-	<div class="i-mi:deno w-[48px] h-[48px]" />
-	<div class="i-mi:fastify w-[48px] h-[48px] c-red-600" />
+	<div class="i-mi:deno h-[48px] w-[48px]" />
+	<div class="i-mi:fastify h-[48px] w-[48px] c-red-600" />
 </template>

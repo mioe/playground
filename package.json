@@ -23,6 +23,7 @@
 		"@intlify/unplugin-vue-i18n": "^2.0.0",
 		"@mioe/eslint-config": "^0.1.4",
 		"@types/node": "^20.11.5",
+		"@unocss/eslint-config": "^0.58.3",
 		"@vitejs/plugin-vue": "^5.0.3",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3",
