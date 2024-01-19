@@ -2,7 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/playground/vite.svg" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/svg+xml" href="/playground/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" href="/playground/favicons/pwa-192x192.png" />
+		<link rel="mask-icon" href="/playground/favicons/safari-pinned-tab.svg" color="#00aba9" />
+		<meta name="msapplication-TileColor" content="#00aba9" />
+
+		<!-- pwa -->
+		<script>
+			if('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('/sw.js', { scope: '/' })
+				})
+			}
+		</script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>playground</title>
 		<script type="module" crossorigin src="/playground/assets/index-RdxXA4Ln.js"></script>
