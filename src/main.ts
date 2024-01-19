@@ -10,8 +10,8 @@ import './style.css'
 /**
  * Modules
  */
-import { i18n, loadLanguageAsync, getDefaultLocale } from './modules/vue-i18n'
 import { pinia } from './modules/pinia'
+import { i18n, loadLanguageAsync, getDefaultLocale } from './modules/vue-i18n'
 import { router } from './modules/vue-router'
 
 /**
