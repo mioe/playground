@@ -21,6 +21,10 @@ async function toggleLocales() {
 	await loadLanguageAsync(newLocale)
 	locale.value = newLocale
 }
+
+useHead({
+	title: 'My awesome site',
+})
 </script>
 
 <template>

@@ -11,6 +11,7 @@ import './style.css'
  * Modules
  */
 import { pinia } from './modules/pinia'
+import { head } from './modules/unhead'
 import { i18n, loadLanguageAsync, getDefaultLocale } from './modules/vue-i18n'
 import { router } from './modules/vue-router'
 
@@ -19,6 +20,7 @@ import { router } from './modules/vue-router'
  */
 createApp(App)
 	.use(i18n)
+	.use(head)
 	.use(pinia)
 	.use(router)
 	.mount('#app')

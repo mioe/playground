@@ -12,6 +12,7 @@
 		"test": "vitest"
 	},
 	"dependencies": {
+		"@unhead/vue": "^1.8.10",
 		"@vueuse/core": "^10.7.2",
 		"pinia": "^2.1.7",
 		"vue": "^3.4.15",

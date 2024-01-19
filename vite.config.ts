@@ -6,6 +6,7 @@ import Pages from 'vite-plugin-pages'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
@@ -48,6 +49,7 @@ export default defineConfig(({ command, mode }) => {
 					'vue-router',
 					'vue-i18n',
 					'@vueuse/core',
+					unheadVueComposablesImports,
 				],
 				dts: 'src/auto-imports.d.ts',
 				dirs: [
