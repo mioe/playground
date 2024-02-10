@@ -29,6 +29,8 @@ module.exports = {
 				parser: '@typescript-eslint/parser',
 			},
 			rules: {
+				'no-unused-vars': 'off',
+				'no-undef': 'off',
 				'vue/multi-word-component-names': 'off',
 				'vue/require-default-prop': 'off',
 				'vue/html-indent': ['error', 'tab', {
@@ -71,6 +73,7 @@ module.exports = {
 	rules: {
 		'@typescript-eslint/ban-ts-comment': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/no-unused-vars': 'off',
 		'@stylistic/comma-dangle': ['error', 'always-multiline'],
 		'@stylistic/indent': ['error', 'tab'],
 		'@stylistic/quote-props': ['error', 'as-needed'],
