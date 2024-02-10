@@ -9,6 +9,7 @@
 		"dev": "vite --host",
 		"build": "vue-tsc && vite build",
 		"preview": "vite preview",
+		"lint": "eslint .",
 		"test": "vitest"
 	},
 	"dependencies": {
@@ -22,11 +23,14 @@
 	"devDependencies": {
 		"@iconify/utils": "^2.1.15",
 		"@intlify/unplugin-vue-i18n": "^2.0.0",
-		"@mioe/eslint-config": "^0.1.4",
+		"@stylistic/eslint-plugin": "^1.6.1",
 		"@types/node": "^20.11.5",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0",
 		"@unocss/eslint-config": "^0.58.3",
 		"@vitejs/plugin-vue": "^5.0.3",
 		"eslint": "^8.56.0",
+		"eslint-plugin-vue": "^9.21.1",
 		"typescript": "^5.3.3",
 		"unocss": "^0.58.3",
 		"unplugin-auto-import": "^0.17.3",
