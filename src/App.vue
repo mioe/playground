@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useAppStore } from '~/stores/app'
-import { availableLocales, loadLanguageAsync } from '~/modules/vue-i18n'
 import { setStorageKey } from '~/helpers'
+import { availableLocales, loadLanguageAsync } from '~/modules/vue-i18n'
+import { useAppStore } from '~/stores/app'
 
 const router = useRouter()
 const routes = router.options.routes
@@ -51,7 +51,7 @@ useHead({
 		<input
 			v-model="storageValue"
 			type="text"
-		>
+		/>
 	</div>
 
 	<div class="p-[8px]">

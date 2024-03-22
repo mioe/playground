@@ -1,5 +1,5 @@
-import type { Locale } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
+import type { Locale } from 'vue-i18n'
 
 const DEFAULT_LOCALE = 'en'
 const I18N_KEY = 'vue-i18n'

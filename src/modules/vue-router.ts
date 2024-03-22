@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import routes from '~pages'
 import NotFound from '~/404.vue'
+import routes from '~pages'
 
 const router = createRouter({
 	history: createWebHashHistory(),
