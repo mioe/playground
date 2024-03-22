@@ -22,6 +22,8 @@ async function toggleLocales() {
 	locale.value = newLocale
 }
 
+const testSharedComposables = useMoneyFormat(200)
+
 useHead({
 	title: 'My awesome site',
 })
@@ -44,6 +46,11 @@ useHead({
 		<button @click="toggleLocales">
 			toggleLocales: {{ locale }}
 		</button>
+	</div>
+
+	<div class="p-[8px]">
+		<p>testSharedComposables:</p>
+		<p>{{ testSharedComposables }}</p>
 	</div>
 
 	<div class="p-[8px]">
