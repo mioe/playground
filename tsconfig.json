@@ -28,7 +28,7 @@
 		"src/**/*.ts",
 		"src/**/*.tsx",
 		"src/**/*.vue",
-		"test/**/*.ts",
+		"tests/**/*.ts",
 		"*.config.ts",
 		".eslintrc.cjs"
 	],
