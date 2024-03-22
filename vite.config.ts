@@ -92,7 +92,7 @@ export default defineConfig(({ command, mode }) => {
 
 		// https://github.com/vitest-dev/vitest
 		test: {
-			include: ['test/**/*.test.ts'],
+			include: ['tests/**/*.test.ts'],
 		},
 	}
 })
